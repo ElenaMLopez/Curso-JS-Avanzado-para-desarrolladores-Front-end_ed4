@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WS</title>
+</head>
+<body>
+    <script src="wss://socket-io-tweet-stream.now.sh/socket.io/"></script>
+    <script>
+        console.log('Hola Cucú!');
+        var socket = io("url");
+
+        socket.on('channel', function(data) { 
+            console.log( "Received Message: ", data); 
+        });
+        
+        
+    </script>
+</body>
+</html>
